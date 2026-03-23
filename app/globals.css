@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg: #FFFFFF;
+  --ink: #111111;
+  --ink-light: #555555;
+  --ink-muted: #999999;
+  --highlight: #FEF5B8;
+  --border: #E5E5E5;
+  --alert: #E32636;
+  --ok: #009F6B;
+  
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --grid-max: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.phone-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  outline: none;
+  padding: 16px 48px 16px 0;
+  font-family: var(--font-sans);
+  font-size: 18px;
+  color: var(--ink);
+  transition: border-bottom 0.2s ease;
+}
+
+.phone-input:focus {
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 15px;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(227, 38, 54, 0.4); }
+  70% { box-shadow: 0 0 0 6px rgba(227, 38, 54, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(227, 38, 54, 0); }
+}
