@@ -329,6 +329,19 @@ export default function Home() {
         </a>
         <div style={{ display: 'flex', gap: '24px' }}>
           <a
+            href="/dashboard"
+            style={{
+              fontSize: '14px',
+              color: 'var(--ink-light)',
+              textDecoration: 'none',
+              transition: 'color 0.2s ease',
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--ink)')}
+            onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--ink-light)')}
+          >
+            Status
+          </a>
+          <a
             href="/privacy"
             style={{
               fontSize: '14px',
